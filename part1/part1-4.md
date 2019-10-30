@@ -1,20 +1,20 @@
-##1.4 Profiling安装或启动失败
+## 1.4 Profiling安装或启动失败
 如果profiling安装失败，请在“~/tools/log/profilerlog/profiling.log”中查看相关日志信息，可能原因有以下几种，请一一排查。
-###问题描述1
+### 问题描述1
 日志中出现错误提示：“Restart httpd service ... Failed!” httpd服务启动失败。
-####可能原因1
+#### 可能原因1
 执行如下命令，若无进程说明httpd服务启动失败。
 ps -aux|grep httpd
-####处理建议1
+#### 处理建议1
 1. 查看普通用户所指定的安装目录是否有750权限，如果没有则使用如下命令修改：
 chmod 750 [安装目录]
 2. 若安装目录的权限正确，检查普通用户的“$JAVA_HOME”是否配置正确。
 检查方法：
 执行命令echo $JAVA_HOME，如果返回为空，则需要手动配置。JAVA_HOME环境变量配置方法请参见2中的设置环境变量章节。
 将以上两点都配置完成后，卸载重新安装MindSpore Studio即可。
-###问题描述2
+### 问题描述2
 日志中出现错误提示：“Apache user: msvpUser cannot access dependency dir: ~/tools/support/apache”。
-####可能原因2
+#### 可能原因2
 安装目录权限不足，导致msvpUser无法进入安装目录。
 1. 从安装用户切换到msvpUser：sudo su msvpUser，如果无法切换，请切换到root用户，再切换到msvpUser：su msvpUser。
 2. 从根目录逐级进入安装目录直至"/home/username/tools/support/apache"，若出现“Permission denied” 则说明该层目录权限过低。

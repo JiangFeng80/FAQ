@@ -1,5 +1,5 @@
-4.3 应用faster-R-cnn网络模型执行目标检测报no result file
-问题描述
+## 4.3 应用faster-R-cnn网络模型执行目标检测报no result file
+### 问题描述
 应用MindSpore Studio模型导入功能成功导入目标检测模型faster-R-CNN。
 应用faster-R-CNN网络进行编排，编排流程如图4-5所示。
 图4-5目标检测编排流程
@@ -13,8 +13,8 @@
 图4-7流程编排结果显示错误
 
 
-解决方法
-问题1：流程编排不对
+### 解决方法
+#### 问题1：流程编排不对
 按照图4-8所示进行目标检测流程编排。
 图4-8目标检测网络编排流程
 
@@ -24,7 +24,7 @@
 
 
 FaseRCNNImageInfo为MindSpore Studio内置的仅用于FasterRcnn网络的输入图片处理Engine，作为MindInferenceEngine的第三个输入。
-问题2：图片预处理节点的Resize属性值设置不正确，未按照模型要求的宽与高进行设置。
+#### 问题2：图片预处理节点的Resize属性值设置不正确，未按照模型要求的宽与高进行设置。
 a.查看模型要求宽与高，具体查看方法请参见步骤1。
 b.设置ImagePreProcess节点的Resize属性的width与height为模型要求的宽和高，如图4-10所示。
 图4-10ImagePreprocess节点Resize设置

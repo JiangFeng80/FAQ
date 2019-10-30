@@ -1,7 +1,7 @@
-2.6 VMWare虚拟机环境下Ubuntu连接开发者板（USB）后ifconfig查看无虚拟网卡出现
-问题描述
+## 2.6 VMWare虚拟机环境下Ubuntu连接开发者板（USB）后ifconfig查看无虚拟网卡出现
+### 问题描述
 VMWare虚拟机环境下Ubuntu连接开发者板（USB）后ifconfig查看无虚拟网卡出现。
-解决方法
+### 解决方法
 1.查看USB连接线是否正常。
 若正常 => 2
 若不正常，请更换USB连接线。

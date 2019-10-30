@@ -1,5 +1,5 @@
-2.8 配置交叉编译环境时提示“Pack sysroot.tar.gz failed”
-问题描述
+## 2.8 配置交叉编译环境时提示“Pack sysroot.tar.gz failed”
+### 问题描述
 配置交叉编译环境时提示“Pack sysroot.tar.gz failed”，如下图所示。
 图2-3配置交叉编译环境失败
 
@@ -8,7 +8,7 @@
 图2-4登录失败
 
 
-解决方法
+### 解决方法
 1.从MindSpore Studio所在服务器SSH登录到开发者板失败，首先查看一下MindSpore Studio所在服务器的IP地址，如下图所示。
 图2-5MindSpore Studio所在服务器IP地址查看
 
