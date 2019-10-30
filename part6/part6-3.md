@@ -1,4 +1,4 @@
-6.3 如何离线部署MindSpore Studio或者Atlas 200 DK依赖软件
+## 6.3 如何离线部署MindSpore Studio或者Atlas 200 DK依赖软件
 背景
 若MindSpore Studio所在Ubuntu服务器无法连接网络，则无法直接在线安装MindSpore Studio或者Atlas 200 DK交叉编译环境依赖软件，例如：gcc g++ cmake curl libboost-all-dev libatlas-base-dev unzip haveged liblmdb-dev  qemu-user-static binfmt-support python3-yaml gcc-aarch64-linux-gnu g++-aarch64-linux-gnu等，详细依赖可以参考《Ascend 310 MindSpore Studio工具安装指南（Ubuntu，X86）》与《Ascend 310 Atlas 200 Developer Kit 使用指导》，此时需要离线部署这些依赖软件。
 操作步骤

@@ -1,4 +1,4 @@
-5.3 ret=ai_model_manager->process是否支持多输入多输出场景
+## 5.3 ret=ai_model_manager->process是否支持多输入多输出场景
 ret = ai_model_manager_->Process是支持多输入多输出的场景的，具体可以参考MindInferenceEngine1.cpp中的代码：
     // put buffer to FrameWork directly, InputSize has only one 
     hiai::AITensorDescription inputTensorDesc = hiai::AINeuralNetworkBuffer::GetDescription(); 
