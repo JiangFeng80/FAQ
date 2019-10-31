@@ -2,8 +2,8 @@
 在MindSpore Studio所在服务器上配置路由规则，允许转发开发者板的IP报文。
 开发者板上则需要配置一下路由地址，即MindSpore Studio所在服务器的IP地址。
 MindSpore Studio所在服务器侧配置及开发者板侧的详细配置如下所示。
-MindSpore Studio所在服务器侧配置（UI Host侧配置）
-### 以root用户执行如下命令。
+### MindSpore Studio所在服务器侧配置（UI Host侧配置）
+ 以root用户执行如下命令。
 #### 1.执行如下命令允许报文转发。
 echo "1" > /proc/sys/net/ipv4/ip_forward
 #### 2.配置NAT转换。

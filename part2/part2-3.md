@@ -8,9 +8,11 @@ ssh-keygen -f "$HOME/.ssh/known_hosts" -R 192.168.1.2
 ECDSA host key for 192.168.1.2 has changed and you have requested strict checking.
 ### 解决方法
 出现此错误是本地保存的SSH信息已失效导致，所以需要清空当前保存的SSH信息，然后重新建立连接。
-#### 步骤 1 清空UI Host中当前用户连接192.168.1.2主机的公钥信息。
+#### 步骤1 
+    清空UI Host中当前用户连接192.168.1.2主机的公钥信息。
 ssh-keygen -R 192.168.1.2
-#### 步骤 2 重新以SSH方式连接Atlas 200 DK开发者板。
+#### 步骤2 
+    重新以SSH方式连接Atlas 200 DK开发者板。
 ssh HwHiAiUser@192.168.1.2
 当提示如下信息时，输入yes重新建立SSH连接。
 The authenticity of host '192.168.1.2' can't be established. 
