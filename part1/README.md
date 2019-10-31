@@ -1,5 +1,4 @@
 # MindSpore部署问题
-
 ## [1.1 执行apt-get update命令检查源配置出错](part1-1.md)
 ## [1.2 界面报IP不正确](part1-2.md)
 ## [1.3 MindSpore Studio 使用新IP地址登录失败](part1-3.md)

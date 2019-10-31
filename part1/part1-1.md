@@ -15,7 +15,7 @@ E: Unable to lock the administration directory (/var/lib/dpkg/), is another proc
 缺少libappstream3库，执行如下命令进行先清除相关软件包，在执行更新：
 sudo apt-get purge libappstream3 
 sudo apt-get update
-### 问题2解决方法：
+#### 问题2解决方法：
 执行如下命令删除lock：
 sudo rm /var/cache/apt/archives/lock 
 sudo rm /var/lib/dpkg/lock
